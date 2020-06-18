@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B665FE7-F212-4BEA-B43B-06FD68531361}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Teliki_Ergasia_Allilepidrasis2018</RootNamespace>
+    <AssemblyName>Teliki_Ergasia_Allilepidrasis2018</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABOUT_US.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABOUT_US.Designer.cs">
+      <DependentUpon>ABOUT_US.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="EKSUPNI_NTOULAPA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EKSUPNI_NTOULAPA.Designer.cs">
+      <DependentUpon>EKSUPNI_NTOULAPA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EKSUPNO_PSUGEIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EKSUPNO_PSUGEIO.Designer.cs">
+      <DependentUpon>EKSUPNO_PSUGEIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FWTISMOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FWTISMOS.Designer.cs">
+      <DependentUpon>FWTISMOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineShop.Designer.cs">
+      <DependentUpon>OnlineShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ONLINE_AGORA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ONLINE_AGORA.Designer.cs">
+      <DependentUpon>ONLINE_AGORA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RIKSEMIAMATIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RIKSEMIAMATIA.Designer.cs">
+      <DependentUpon>RIKSEMIAMATIA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="simiwmatario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="simiwmatario.Designer.cs">
+      <DependentUpon>simiwmatario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUNTAGESMOU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUNTAGESMOU.Designer.cs">
+      <DependentUpon>SUNTAGESMOU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUSKEUES_MOU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUSKEUES_MOU.Designer.cs">
+      <DependentUpon>SUSKEUES_MOU.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ABOUT_US.resx">
+      <DependentUpon>ABOUT_US.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EKSUPNI_NTOULAPA.resx">
+      <DependentUpon>EKSUPNI_NTOULAPA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EKSUPNO_PSUGEIO.resx">
+      <DependentUpon>EKSUPNO_PSUGEIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FWTISMOS.resx">
+      <DependentUpon>FWTISMOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineShop.resx">
+      <DependentUpon>OnlineShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ONLINE_AGORA.resx">
+      <DependentUpon>ONLINE_AGORA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RIKSEMIAMATIA.resx">
+      <DependentUpon>RIKSEMIAMATIA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="simiwmatario.resx">
+      <DependentUpon>simiwmatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUNTAGESMOU.resx">
+      <DependentUpon>SUNTAGESMOU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUSKEUES_MOU.resx">
+      <DependentUpon>SUSKEUES_MOU.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_us.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aristera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buynow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dexia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eikona01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eikona02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fwta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genikoPS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INFO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalathiMou.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuFwta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuntoulapa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuPs1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuPs2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuPs3Eidop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuPs4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuPs5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuPsugeio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuSk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\priza3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dwmatio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koyzina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mauro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saloni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tpualeta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alpha01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\velos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\velos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\velos3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pick_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ΕΞΥΠΗΡΕΤΗΣΗ ΠΕΛΑΤΩΝ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ΟΡΟΙ ΚΑΙ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ΠΛΗΡΟΦ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ΣΥΧΝΕς ΕΡΩΤΗΣΕΙΣ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekpelatwn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oroipro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plirofories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suxnes er.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retro-tv-icon-psd_30-2308.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VRAstiras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\αρχείο λήψης.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COFFEE 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COFFEE2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOILER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\athensfm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissfm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovefm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sfairafm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Science Minus2 Math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Science Plus2 Math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV-icon01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV-icon02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV-icon03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV-icon04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextHelp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\velosKATW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telos2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end the.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okkk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\THEand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACKtomenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3to.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3tokoumpi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erotimatikoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erwtimA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erwtimatiko.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retroSK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syskeyes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ananas.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anthoturo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banana.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friganies.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\galopoyla.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gouda.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graviera.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kotopoylo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laxano.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manitaria.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mila.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mithos.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ntomatinia.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portokalia.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rodia.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sklavenitis.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xoirino.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardAmer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardMaestro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardMaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardVisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\olesCARD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americanola1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americanola2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\americanola3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maestroocardola1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maestroocardola2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maestroocardola3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercardola1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercardola2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercardola3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visaola1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visaola2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visaola3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermometer-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ugrasia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ugrasiaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ygrasia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi anaz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80vath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus+.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max++.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min--.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max++ddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLu4ClAVAAA_QQt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0va.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20VA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-20VQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40VA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-40va.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60VA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80VA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100VA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\evap_C.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anazitisi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\an.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syntagi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syntagi3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syntagi4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syntagi5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syntagi10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syntagi11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20180215-182823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20180215-182911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20180215-182941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_20180215-182959.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xclose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xxcl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafetiera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kafetiera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vras.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tvv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arxikintoy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telikintoul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vmprosta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ntoulapa001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ntoulapa002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ntoulapa003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\varistera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vdeksia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mplearistera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mpledeksia.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
